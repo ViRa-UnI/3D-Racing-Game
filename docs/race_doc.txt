@@ -1,0 +1,36 @@
+"""
+Race Class Documentation
+
+The Race class is defined in the "race.py" file. It is used in the "main.py" file to control the flow of the game.
+
+Attributes:
+- participants: A list of Bike objects participating in the race.
+- track: An instance of the Track class representing the track on which the race is happening.
+
+Methods:
+- start(): This method starts the race. It sets the game_status variable to True and initializes the positions of all bikes to the start of the track.
+- end(): This method ends the race. It sets the game_status variable to False and determines the winner of the race.
+- check_winner(): This method checks if any of the bikes have reached the end of the track. If a bike has reached the end, it calls the end() method and sets the winner variable to the winning bike.
+
+Usage:
+
+To use the Race class, first import it from the "race.py" file. Then, create an instance of the Race class, passing in a list of Bike objects and a Track object.
+
+from race import Race
+from bike import Bike
+from track import Track
+
+bikes = [Bike(), Bike(), Bike()]
+track = Track()
+race = Race(bikes, track)
+
+To start the race, call the start() method on the race object.
+
+race.start()
+
+To check if there is a winner, call the check_winner() method on the race object.
+
+race.check_winner()
+
+If there is a winner, the check_winner() method will automatically call the end() method to end the race.
+"""

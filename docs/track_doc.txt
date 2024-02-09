@@ -1,0 +1,26 @@
+"""
+Track Class Documentation
+
+The Track class is defined in the "track.py" file. It is used in the "race.py" and "main.py" files. 
+
+Attributes:
+- length (int): The length of the track. It is defined in units where each unit represents a certain distance in the game.
+- obstacles (list): A list of Obstacle objects. Each obstacle has a position and size.
+
+Methods:
+- display_track(): This method is used to display the current state of the track. It prints the track with the positions of the obstacles.
+
+Usage:
+
+To create a Track object, you need to specify the length and the obstacles. Here is an example:
+
+    track = Track(100, [Obstacle(20, 2), Obstacle(50, 3)])
+
+This creates a track of length 100 units with two obstacles. The first obstacle is at position 20 and has a size of 2 units. The second obstacle is at position 50 and has a size of 3 units.
+
+To display the track, you can use the display_track() method:
+
+    track.display_track()
+
+This will print the track with the positions of the obstacles.
+"""

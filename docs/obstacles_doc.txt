@@ -1,0 +1,31 @@
+"""
+Obstacle Class Documentation
+
+File: obstacles.py
+
+The Obstacle class is defined in the obstacles.py file. This class is used in the track.py file to create obstacles on the track.
+
+Class Attributes:
+1. position: This attribute represents the position of the obstacle on the track. It is a tuple of two integers representing the x and y coordinates.
+2. size: This attribute represents the size of the obstacle. It is an integer.
+
+Class Methods:
+1. display_obstacle(): This method is used to display the obstacle on the track. It prints the position and size of the obstacle.
+
+Usage:
+
+To create an obstacle:
+```python
+obstacle = Obstacle((5, 10), 3)
+```
+
+To display an obstacle:
+```python
+obstacle.display_obstacle()
+```
+
+This will print something like:
+"Obstacle at position (5, 10) with size 3"
+
+Note: The Obstacle class does not handle collisions. The check_collision function in the main.py file is used to check if a bike has hit an obstacle.
+"""
