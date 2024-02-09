@@ -1,0 +1,34 @@
+"""
+Bike Class Documentation
+
+File: bike.py
+
+The Bike class represents a bike in the bike racing game. It is used in the main.py, race.py, and track.py files.
+
+Attributes:
+- speed (int): The current speed of the bike. It is initially set to 0.
+- position (tuple): The current position of the bike on the track. It is initially set to (0, 0).
+
+Methods:
+- move(): Moves the bike based on its current speed and direction. It updates the position attribute.
+- accelerate(): Increases the speed of the bike by 1 unit.
+- decelerate(): Decreases the speed of the bike by 1 unit. The speed will not go below 0.
+
+Example Usage:
+
+```python
+# Creating a new bike
+bike = Bike()
+
+# Accelerating the bike
+bike.accelerate()
+
+# Moving the bike
+bike.move()
+
+# Decelerating the bike
+bike.decelerate()
+```
+
+Note: The Bike class does not handle collisions. Collisions are handled by the check_collision function in the main.py file.
+"""

@@ -1,0 +1,25 @@
+"""
+Main.py Documentation
+
+This file is the main driver of the Bike Racing game. It uses the classes defined in the other files (Bike, Race, Track, and Obstacle) to run the game.
+
+The main function in this file is responsible for setting up the game, running the game loop, and ending the game.
+
+Shared Variables:
+1. game_status: A boolean variable that is True when the game is running and False when the game is not running.
+2. winner: A variable that stores the winner of the race. It is None when the game is not running or the race is not over.
+3. bikes: A list of all Bike objects participating in the race.
+4. track: A Track object for the race.
+
+Shared Functions:
+1. check_collision: A function that checks if a bike has hit an obstacle. It takes a Bike object and an Obstacle object as arguments and returns True if they have collided and False otherwise.
+2. display_game: A function that displays the current state of the game. It prints the positions of all bikes and obstacles on the track.
+
+Classes Used:
+1. Bike: Defined in bike.py, this class represents a bike in the game. It has attributes like speed and position and methods like move(), accelerate(), and decelerate().
+2. Race: Defined in race.py, this class represents a race in the game. It has attributes like participants (list of Bike objects) and track, and methods like start(), end(), and check_winner().
+3. Track: Defined in track.py, this class represents the track in the game. It has attributes like length and obstacles, and a method like display_track().
+4. Obstacle: Defined in obstacles.py, this class represents an obstacle on the track. It has attributes like position and size, and a method like display_obstacle().
+
+The main function uses these classes and their methods to run the game. It creates Bike, Race, and Track objects, starts the race, runs the game loop (where it checks for collisions and updates the game state), and ends the game when a winner is found.
+"""
